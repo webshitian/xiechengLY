@@ -1,0 +1,45 @@
+//设置头部部分样式开始
+.header_top_nav_1{
+    display: flex;
+    height: 90px;
+    width: 540px;
+    .top_nav_left{
+        flex:1;
+        background: pink;
+        
+        a{
+            display: flex;
+            span{
+                color:#FFFFFF;
+                flex-wrap:wrap;
+            }
+            .img_nav{
+            width: 43px;
+            height: 43px;
+            border: 1px solid red;
+            background: url(../img/un_ico_home_v620.png) no-repeat 0 -260px;
+            flex-wrap:wrap;
+            }
+           
+        }
+    }
+    .top_nav_right{
+        flex:2;
+        background: yellow;
+        a{
+            flex: 1;
+            background: green;
+            border: 1 solid #FFFFFF;
+        }
+    }
+    
+    
+}
+
+//flex-direction设置主轴的方向
+//justify-content设置主轴上的子元素排列方式
+//flex-wrap 设置子元素是否换行
+//align-content 设置侧轴上的子元素的排列方式（多行）
+//align-item设置侧轴上的子元素排列方式（单行）
+//flex-flow 复合属性
+

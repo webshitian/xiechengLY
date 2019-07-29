@@ -1,0 +1,32 @@
+.header_top_nav_1 {
+  display: flex;
+  height: 90px;
+  width: 540px;
+}
+.header_top_nav_1 .top_nav_left {
+  flex: 1;
+  background: pink;
+}
+.header_top_nav_1 .top_nav_left a {
+  display: flex;
+}
+.header_top_nav_1 .top_nav_left a span {
+  color: #FFFFFF;
+  flex-wrap: wrap;
+}
+.header_top_nav_1 .top_nav_left a .img_nav {
+  width: 43px;
+  height: 43px;
+  border: 1px solid red;
+  background: url(../img/un_ico_home_v620.png) no-repeat 0 -260px;
+  flex-wrap: wrap;
+}
+.header_top_nav_1 .top_nav_right {
+  flex: 2;
+  background: yellow;
+}
+.header_top_nav_1 .top_nav_right a {
+  flex: 1;
+  background: green;
+  border: 1 solid #FFFFFF;
+}

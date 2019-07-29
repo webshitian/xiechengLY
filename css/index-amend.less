@@ -1,0 +1,322 @@
+//这是从base中导入过来的初始化样式
+@import './base.less'; //这是index页面的样式
+//在移动端，在没有说明的情况下，一般将图片缩小2倍
+//公共样式
+//设置酒店的主色调
+//@hotel_col:#fa7f50;
+//设置机票的主色调
+//@fare_col:#3d98ff;
+//设置旅游的主色调
+//@travel_col:#44c522;
+.view {
+    //  设置最大宽度
+    max-width: 540px; //  设置最小宽度
+    min-width: 320px;
+    margin: 0 auto;
+    .xc_service {
+        .xc_common {
+            //      设置flex盒子
+            display: flex;
+            height: 90px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            color: #FFFFFF;
+            .hotel_img {
+                display: flex;
+                flex: 1; //          background:@hotel_col;
+                border-radius: 5px 0 0 5px;
+                justify-content: center;
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around; //             justify-content:center;
+                    span {
+                        &:nth-child(2) {
+                            //                     display:block;
+                            width: 43px;
+                            height: 43px;
+                            background: url("../img/xc_sprites.png") no-repeat 0 -260px/2;
+                            background-size: 208px/2 655px/2;
+                        }
+                    }
+                }
+            }
+            .hotel_nav {
+                display: flex;
+                flex: 2; //          background: @hotel_col;
+                border-radius: 0 5px 5px 0;
+                flex-wrap: wrap;
+                a {
+                    display: flex;
+                    width: 50%;
+                    height: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    border-left: 1px solid #FFFFFF; //              flex: 1;
+                    //              &:nth-child(-n+2){
+                    //                  border-bottom:1px solid #FF0000;
+                    //              }
+                    &:nth-child(1) {
+                        border-bottom: 1px solid #FFFFFF;
+                    }
+                    &:nth-child(2) {
+                        border-bottom: 1px solid #FFFFFF;
+                    }
+                }
+            }
+            .hotel_bg {
+                background: #fa7f50;
+            }
+            .fare_bg {
+                background: #3d98ff;
+                a {
+                    span {
+                        &:last-child {
+                            background: url("../img/xc_sprites.png") no-repeat 0 -596px/2;
+                            background-size: 208px/2 655px/2;
+                        }
+                    }
+                }
+            }
+            .travel_bg {
+                background: #44c522;
+                a {
+                    span {
+                        &:last-child {
+                            background: url("../img/xc_sprites.png") no-repeat 0 -480px/2;
+                            background-size: 208px/2 655px/2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //携程导航部分
+    .xc_nav {
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 12px;
+        flex-wrap: wrap;
+        a {
+            display: flex;
+            width: 20%;
+            flex-direction: column;
+            padding: 5px;
+            align-items: center;
+            span {
+                &:first-child {
+                    width: 28px;
+                    height: 28px;
+                    background: url("../img/un_ico_subnav_v7.124@2x.png") no-repeat 0 5px;
+                    background-size: 48px/2 600px/2;
+                }
+            }
+            .insure_bg {
+                background: url("../img/un_ico_subnav_v7.124@2x.png") no-repeat 5px -22px !important;
+                background-size: 48px/2 600px/2 !important;
+            }
+            .money_bg {
+                background: url("../img/un_ico_subnav_v7.124@2x.png") no-repeat 4px -51px !important;
+                background-size: 48px/2 600px/2 !important;
+            }
+            .shop_bg {
+                background: url("../img/un_ico_subnav_v7.124@2x.png") no-repeat 3px -273px !important;
+                background-size: 48px/2 600px/2 !important;
+            }
+            .guide_bg {
+                background: url("../img/un_ico_subnav_v7.124@2x.png") no-repeat 3px -81px !important;
+                background-size: 48px/2 600px/2 !important;
+            }
+            .free_bg {
+                background: url("../img/un_ico_subnav_v7.124@2x.png") no-repeat 6px -137px !important;
+                background-size: 48px/2 600px/2 !important;
+            }
+            .overseas_bg {
+                background: url("../img/un_ico_subnav_v7.124@2x.png") no-repeat 4px -167px !important;
+                background-size: 48px/2 600px/2 !important;
+            }
+            .gift_bg {
+                background: url("../img/un_ico_subnav_v7.124@2x.png") no-repeat 3px -109px !important;
+                background-size: 48px/2 600px/2 !important;
+            }
+            .card_bg {
+                background: url("../img/un_ico_subnav_v7.124@2x.png") no-repeat 3px -194px !important;
+                background-size: 48px/2 600px/2 !important;
+            }
+            .more_bg {
+                background: url("../img/un_ico_subnav_v7.124@2x.png") no-repeat 5px -244px !important;
+                background-size: 48px/2 600px/2 !important;
+            }
+        }
+    }
+    //特卖汇部分
+    .sell {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 5px;
+        padding: 5px;
+        .sell_title {
+            display: flex;
+            padding-bottom: 5px;
+            justify-content: space-between;
+            em {
+                font-size: 16px;
+                font-weight: 600;
+                color: #fd3c52;
+            }
+            a {
+                font-size: 12px;
+                color: #FFFFFF;
+                background-image: linear-gradient(to right, #ff6b7d, #ff84d2);
+                border-radius: 10px;
+                padding: 2px 8px;
+            }
+        }
+        .sell_content {
+            display: flex;
+            .content_left {
+                flex: 1; //              width: 264px;
+                a {
+                    &:nth-child(2) {
+                        overflow: hidden;
+                        display: block;
+                        height: 42px;
+                        font-size: 14px;
+                        padding-top: 4px;
+                        line-height: 19px;
+                    }
+                }
+                .price {
+                    span {
+                        &:first-child {
+                            color: #fe4f5e;
+                        }
+                        &:last-child {
+                            background: #fd3a51;
+                            color: #FFFFFF;
+                            font-size: 12px;
+                            border-radius: 8px;
+                            padding: 1px 4px;
+                        }
+                    }
+                }
+            }
+            .content_right {
+                flex: 1;
+                display: flex;
+                flex-wrap: wrap;
+                a {
+                    &:nth-child(1) {
+                        width: 100%;
+                        //                      width: 264;                 
+                        height: 105px;
+                        background: #f9f9f9;
+                        position: relative;
+                        padding: 10px 0 0 10px;
+                        span {
+                            font-weight: 600;
+                            color: #fd3a51;
+                        }
+                        img {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            width: 54px;
+                            height: 71px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        display: flex;
+                        width: 50%;
+                        height: 105px; //                      margin-top: 10px;
+                        background: #f9f9f9;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        border-top: 5px solid #FFFFFF;
+                        border-left: 5px solid #FFFFFF;
+                        border-bottom: 5px solid #FFFFFF;
+                        span {
+                            font-weight: 600;
+                            color: #6aabff;
+                        }
+                        img {
+                            width: 50px;
+                            height: 35px;
+                        }
+                    }
+                    &:nth-child(3) {
+                        display: flex;
+                        width: 50%;
+                        height: 105px;
+                        background: #f9f9f9;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        border-top: 5px solid #FFFFFF;
+                        border-left: 5px solid #FFFFFF;
+                        border-bottom: 5px solid #FFFFFF;
+                        span {
+                            font-weight: 600;
+                            color: #68d2bc;
+                        }
+                        img {
+                            width: 50px;
+                            height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //热门活动部分
+    .hot_active {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 5px;
+        padding: 5px;
+        .active_title {
+            display: flex;
+            padding-bottom: 5px;
+            justify-content: space-between;
+            em {
+                font-size: 16px;
+                font-weight: 600;
+                color: orange;
+            }
+            a {
+                font-size: 12px;
+                color: #FFFFFF;
+                background-image: linear-gradient(to right, #ff6b7d, #ff84d2);
+                border-radius: 10px;
+                padding: 2px 8px;
+            }
+        }
+        .active_content {
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                width: 50%;
+            }
+        }
+    }
+    //页脚部分
+    .footer {
+        border: 1px solid #CCCCCC;
+        border-radius: 5px;
+        margin: 5px 0;
+        .way {
+            display: flex;
+            justify-content: space-around;
+            a {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
